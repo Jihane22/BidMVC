@@ -1,0 +1,3 @@
+﻿Generated model file: Bid_MVC_DB.edmx.
+Loading metadata from the database took 00:00:01.6454994.
+Generating the model took 00:00:01.9397937.

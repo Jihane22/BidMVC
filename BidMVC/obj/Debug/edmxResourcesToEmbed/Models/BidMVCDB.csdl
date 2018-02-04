@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="BidingInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BidderId" Type="Int32" />
+    <Property Name="ProductId" Type="Int32" />
+    <Property Name="BidDateTime" Type="DateTime" Precision="3" />
+    <Property Name="BiddingMoney" Type="Double" />
+    <NavigationProperty Name="UserInfo" Relationship="Self.FK_Table_ToTable" FromRole="BidingInfo" ToRole="UserInfo" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_Table_ToTable_1" FromRole="BidingInfo" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ProductCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Category" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Image1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Image2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Image3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="LastDate" Type="DateTime" Precision="3" />
+    <Property Name="SellerId" Type="Int32" />
+    <Property Name="MinimumBid" Type="Double" />
+    <NavigationProperty Name="BidingInfoes" Relationship="Self.FK_Table_ToTable_1" FromRole="Product" ToRole="BidingInfo" />
+    <NavigationProperty Name="UserInfo" Relationship="Self.FK_Product_UserInfo" FromRole="Product" ToRole="UserInfo" />
+    <NavigationProperty Name="SoldInfoes" Relationship="Self.FK_SoldInfo_ToTable" FromRole="Product" ToRole="SoldInfo" />
+  </EntityType>
+  <EntityType Name="SoldInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="Int32" />
+    <Property Name="BuyerId" Type="Int32" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_SoldInfo_ToTable" FromRole="SoldInfo" ToRole="Product" />
+    <NavigationProperty Name="UserInfo" Relationship="Self.FK_SoldInfo_ToTable_1" FromRole="SoldInfo" ToRole="UserInfo" />
+  </EntityType>
+  <EntityType Name="UserInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Country" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Gender" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Facebook" Type="Boolean" />
+    <Property Name="Google" Type="Boolean" />
+    <Property Name="Twitter" Type="Boolean" />
+    <NavigationProperty Name="BidingInfoes" Relationship="Self.FK_Table_ToTable" FromRole="UserInfo" ToRole="BidingInfo" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_Product_UserInfo" FromRole="UserInfo" ToRole="Product" />
+    <NavigationProperty Name="SoldInfoes" Relationship="Self.FK_SoldInfo_ToTable_1" FromRole="UserInfo" ToRole="SoldInfo" />
+  </EntityType>
+  <Association Name="FK_Table_ToTable">
+    <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="0..1" />
+    <End Role="BidingInfo" Type="Self.BidingInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BidingInfo">
+        <PropertyRef Name="BidderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_ToTable_1">
+    <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="BidingInfo" Type="Self.BidingInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BidingInfo">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_UserInfo">
+    <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="0..1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="SellerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SoldInfo_ToTable">
+    <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="SoldInfo" Type="Self.SoldInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SoldInfo">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SoldInfo_ToTable_1">
+    <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="0..1" />
+    <End Role="SoldInfo" Type="Self.SoldInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SoldInfo">
+        <PropertyRef Name="BuyerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Bid_MVC_DBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BidingInfoes" EntityType="Self.BidingInfo" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="SoldInfoes" EntityType="Self.SoldInfo" />
+    <EntitySet Name="UserInfoes" EntityType="Self.UserInfo" />
+    <AssociationSet Name="FK_Table_ToTable" Association="Self.FK_Table_ToTable">
+      <End Role="UserInfo" EntitySet="UserInfoes" />
+      <End Role="BidingInfo" EntitySet="BidingInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_ToTable_1" Association="Self.FK_Table_ToTable_1">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="BidingInfo" EntitySet="BidingInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_UserInfo" Association="Self.FK_Product_UserInfo">
+      <End Role="UserInfo" EntitySet="UserInfoes" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SoldInfo_ToTable" Association="Self.FK_SoldInfo_ToTable">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="SoldInfo" EntitySet="SoldInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SoldInfo_ToTable_1" Association="Self.FK_SoldInfo_ToTable_1">
+      <End Role="UserInfo" EntitySet="UserInfoes" />
+      <End Role="SoldInfo" EntitySet="SoldInfoes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,105 @@
+﻿@model BidMVC.Models.UserInfo
+@{
+    ViewBag.Title = "UserLogin";
+    Layout = "../Shared/_LayoutPageCustom.cshtml";
+}
+
+<h2>UserLogin</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, "Email", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email)
+                @Html.ValidationMessageFor(model => model.Email)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Password, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.PasswordFor(model => model.Password)
+                @Html.ValidationMessageFor(model => model.Password)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Login" class="btn btn-default" />
+                <a href="UserRegister"><input type="button" value="Register" class="btn btn-default" /></a>
+            </div>
+        </div>
+    </div>
+}
+<div>
+    <p id="demo">Click the button to get your position:</p>
+@*    <body onload=" getLocation() ">*@
+@*    </body>*@
+    <button onclick=" getLocation() ">Get your Location</button>
+
+    <div id="mapholder"></div>
+    <script type="text/javascript">
+        var x = document.getElementById("demo");
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            var latlondata = position.coords.latitude + "," + position.coords.longitude;
+            var latlon = "Latitude= " + position.coords.latitude + "," + "Longitude= " + position.coords.longitude;
+            alert(latlon);
+
+            var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="
+                + latlondata + "&zoom=14&size=400x300&sensor=true";
+            document.getElementById("mapholder").innerHTML = "<img src='" + img_url + "' />";
+        }
+
+        function showError(error) {
+            if (error.code == 1) {
+                x.innerHTML = "User denied the request for Geolocation.";
+            } else if (err.code == 2) {
+                x.innerHTML = "Location information is unavailable.";
+            } else if (err.code == 3) {
+                x.innerHTML = "The request to get user location timed out.";
+            } else {
+                x.innerHTML = "An unknown error occurred.";
+            }
+        }
+    </script>
+
+@*    <iframe width="300"*@
+@*            height="170"*@
+@*            frameborder="0"*@
+@*            scrolling="no"*@
+@*            marginheight="0"*@
+@*            marginwidth="0"*@
+@*            src="https://maps.google.com/maps?q='+YOUR_LAT+','+YOUR_LON+'&hl=es;z=14&amp;output=embed"></iframe>*@
+@*    <br />*@
+@*    <small>*@
+@*        <a href="https://maps.google.com/maps?q='+data.lat+','+data.lon+'&hl=es;z=14&amp;output=embed"*@
+@*           style="color:#0000FF;text-align:left"*@
+@*           target="_blank">*@
+@*            See map bigger*@
+@*        </a>*@
+@*    </small>*@
+</div>
+@*23.877199200000003,Longitude= 90.2636639*@
+<div>
+    @Html.ActionLink("Back to List", "UserLogin")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,29 @@
+﻿@using BidMVC.Models
+@using Microsoft.Ajax.Utilities
+@model BidMVC.Models.Product
+
+@{
+    ViewBag.Title = "SearchProduct";
+    Layout = "../Shared/_LayoutPageCustom.cshtml";
+    Product product = ViewBag.Products;
+}
+
+<h2>SearchProduct</h2>
+<form action="~/Product/SearchProduct" method="POST">
+    Product Name : @Html.TextBoxFor(model => model.ProductName)
+    <button type="submit">Search</button>
+</form>
+<br />
+<form action="~/Product/ProductSelector" method="GET">
+    Product Code : @Html.TextBoxFor(model => model.ProductCode)
+    <button type="submit">Search</button>
+</form>
+<br />
+@{
+    if (product != null)
+    {
+        @:Name : @Html.Display(product.ProductName)<br />
+        @:Code : @Html.Display(product.ProductCode)<br />
+        @:Image : <img src="@Url.Content(product.Image1)" class="img-responsive img-thumbnail" /><br />
+    }
+}

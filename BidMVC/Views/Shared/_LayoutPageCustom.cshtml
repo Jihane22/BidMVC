@@ -1,0 +1,67 @@
+﻿@using BidMVC.Models
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body style="background-color: #d3d3d3">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Just Bid it", "GridViewAllProducts", "Product", null, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "GridViewAllProducts", "Product")</li>
+                    <li>@Html.ActionLink("Product", "GridViewAllProducts", "Product")</li> @*name/action/controller*@
+                    @{
+                        if (!string.IsNullOrEmpty(Session["Email"] as string)) //have value
+                        {
+                            <li>@Html.ActionLink("Add Product", "AddProduct", "Product")</li>
+                            <li>@Html.ActionLink("My Current Product", "UserProduct", "User")</li>
+                            <li>@Html.ActionLink("My Sold Product", "UserSoldProduct", "User")</li>
+                        }
+                    }
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    @{
+                        if (!string.IsNullOrEmpty(Session["Email"] as string))  //have value
+                        {
+                            Bid_MVC_DBEntities db = new Bid_MVC_DBEntities();
+                            var email = Session["Email"].ToString();
+                            var username = db.UserInfoes.Where(x => x.Email == email).Select(x => x.UserName).ToList().LastOrDefault();
+
+                            <li>@Html.ActionLink("Hello " + username, "", "")</li>
+                            <li>@Html.ActionLink("Logout", "UserLogout", "User")</li>
+                        }
+                    }
+                    @{
+                        if (string.IsNullOrEmpty(Session["Email"] as string)) //have not value
+                        {
+                            <li>@Html.ActionLink("Login", "UserLogin", "User")</li>
+                            <li>@Html.ActionLink("Register", "UserRegister", "User")</li>
+                        }
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        @RenderBody()
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

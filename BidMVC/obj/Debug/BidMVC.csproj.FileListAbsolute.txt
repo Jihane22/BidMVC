@@ -1,0 +1,201 @@
+H:\C#\MVC\BidMVC\BidMVC\bin\BidMVC.dll.config
+H:\C#\MVC\BidMVC\BidMVC\bin\BidMVC.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\BidMVC.pdb
+H:\C#\MVC\BidMVC\BidMVC\bin\Antlr3.Runtime.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\EntityFramework.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\EntityFramework.SqlServer.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.AspNet.Identity.Core.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.AspNet.Identity.Owin.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Host.SystemWeb.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Cookies.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Facebook.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Google.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.OAuth.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Twitter.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.Web.Infrastructure.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\Newtonsoft.Json.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\Owin.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\System.Web.Helpers.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\System.Web.Mvc.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\System.Web.Optimization.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\System.Web.Razor.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\System.Web.WebPages.Deployment.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\System.Web.WebPages.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\System.Web.WebPages.Razor.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\WebGrease.dll
+H:\C#\MVC\BidMVC\BidMVC\bin\System.Web.Helpers.xml
+H:\C#\MVC\BidMVC\BidMVC\bin\System.Web.Mvc.xml
+H:\C#\MVC\BidMVC\BidMVC\bin\System.Web.Optimization.xml
+H:\C#\MVC\BidMVC\BidMVC\bin\System.Web.Razor.xml
+H:\C#\MVC\BidMVC\BidMVC\bin\System.Web.WebPages.xml
+H:\C#\MVC\BidMVC\BidMVC\bin\System.Web.WebPages.Deployment.xml
+H:\C#\MVC\BidMVC\BidMVC\bin\System.Web.WebPages.Razor.xml
+H:\C#\MVC\BidMVC\BidMVC\bin\Newtonsoft.Json.xml
+H:\C#\MVC\BidMVC\BidMVC\bin\Antlr3.Runtime.pdb
+H:\C#\MVC\BidMVC\BidMVC\bin\EntityFramework.xml
+H:\C#\MVC\BidMVC\BidMVC\bin\EntityFramework.SqlServer.xml
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.AspNet.Identity.Core.xml
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.AspNet.Identity.Owin.xml
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.xml
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Host.SystemWeb.xml
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.xml
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Facebook.xml
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Cookies.xml
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.OAuth.xml
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Google.xml
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Twitter.xml
+H:\C#\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+H:\C#\MVC\BidMVC\BidMVC\obj\Debug\BidMVC.dll
+H:\C#\MVC\BidMVC\BidMVC\obj\Debug\BidMVC.pdb
+H:\C#\MVC\BidMVC\BidMVC\obj\Debug\BidMVC.csprojResolveAssemblyReference.cache
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\BidMVC.dll.config
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\BidMVC.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\BidMVC.pdb
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Antlr3.Runtime.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\EntityFramework.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\EntityFramework.SqlServer.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Google.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.Web.Infrastructure.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Newtonsoft.Json.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Owin.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\System.Web.Helpers.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\System.Web.Mvc.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\System.Web.Optimization.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\System.Web.Razor.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\System.Web.WebPages.Deployment.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\System.Web.WebPages.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\System.Web.WebPages.Razor.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\WebGrease.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Antlr3.Runtime.pdb
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\EntityFramework.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\EntityFramework.SqlServer.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Google.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Newtonsoft.Json.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\System.Web.Helpers.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\System.Web.Mvc.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\System.Web.Optimization.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\System.Web.Razor.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\System.Web.WebPages.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\System.Web.WebPages.Deployment.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\System.Web.WebPages.Razor.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\obj\Debug\BidMVC.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\obj\Debug\BidMVC.pdb
+D:\Google Drive\MVC\BidMVC\BidMVC\obj\Debug\BidMVC.csprojResolveAssemblyReference.cache
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\CrossPlatformLibrary.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\CrossPlatformLibrary.Geolocation.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\CrossPlatformLibrary.Platform.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Guards.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.Practices.ServiceLocation.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\PlatformAdapter.dll
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\CrossPlatformLibrary.pdb
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\CrossPlatformLibrary.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\CrossPlatformLibrary.Geolocation.pdb
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\CrossPlatformLibrary.Geolocation.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\CrossPlatformLibrary.Platform.pdb
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\CrossPlatformLibrary.Platform.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Guards.pdb
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Guards.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\Microsoft.Practices.ServiceLocation.xml
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\PlatformAdapter.pdb
+D:\Google Drive\MVC\BidMVC\BidMVC\bin\PlatformAdapter.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\BidMVC.dll.config
+D:\Doing It Now\BidMVC\BidMVC\bin\BidMVC.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\BidMVC.pdb
+D:\Doing It Now\BidMVC\BidMVC\bin\Antlr3.Runtime.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\CrossPlatformLibrary.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\CrossPlatformLibrary.Geolocation.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\CrossPlatformLibrary.Platform.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\EntityFramework.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\EntityFramework.SqlServer.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\Guards.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.Owin.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.Owin.Security.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Google.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.Practices.ServiceLocation.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.Web.Infrastructure.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\Newtonsoft.Json.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\Owin.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\PlatformAdapter.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\System.Web.Helpers.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\System.Web.Mvc.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\System.Web.Optimization.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\System.Web.Razor.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\System.Web.WebPages.Deployment.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\System.Web.WebPages.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\System.Web.WebPages.Razor.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\WebGrease.dll
+D:\Doing It Now\BidMVC\BidMVC\bin\Antlr3.Runtime.pdb
+D:\Doing It Now\BidMVC\BidMVC\bin\CrossPlatformLibrary.pdb
+D:\Doing It Now\BidMVC\BidMVC\bin\CrossPlatformLibrary.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\CrossPlatformLibrary.Geolocation.pdb
+D:\Doing It Now\BidMVC\BidMVC\bin\CrossPlatformLibrary.Geolocation.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\CrossPlatformLibrary.Platform.pdb
+D:\Doing It Now\BidMVC\BidMVC\bin\CrossPlatformLibrary.Platform.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\EntityFramework.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\EntityFramework.SqlServer.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\Guards.pdb
+D:\Doing It Now\BidMVC\BidMVC\bin\Guards.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.Owin.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.Owin.Security.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Google.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\Doing It Now\BidMVC\BidMVC\bin\Microsoft.Practices.ServiceLocation.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\Newtonsoft.Json.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\PlatformAdapter.pdb
+D:\Doing It Now\BidMVC\BidMVC\bin\PlatformAdapter.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\System.Web.Helpers.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\System.Web.Mvc.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\System.Web.Optimization.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\System.Web.Razor.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\System.Web.WebPages.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\System.Web.WebPages.Deployment.xml
+D:\Doing It Now\BidMVC\BidMVC\bin\System.Web.WebPages.Razor.xml
+D:\Doing It Now\BidMVC\BidMVC\obj\Debug\BidMVC.csprojResolveAssemblyReference.cache
+D:\Doing It Now\BidMVC\BidMVC\obj\Debug\BidMVC.dll
+D:\Doing It Now\BidMVC\BidMVC\obj\Debug\BidMVC.pdb

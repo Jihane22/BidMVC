@@ -1,0 +1,74 @@
+﻿@using BidMVC.Models
+@model IEnumerable<BidMVC.Models.UserInfo>
+
+@{
+    ViewBag.Title = "AllBiderList";
+    Layout = "../Shared/_LayoutPageCustom.cshtml";
+    Bid_MVC_DBEntities db = new Bid_MVC_DBEntities();
+}
+
+<h2>AllBiderList</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Country)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th>
+            Bid Amount
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+            <td>
+                @{
+        var bidAmount = db.BidingInfoes.Where(x => x.BidderId == item.Id).Select(x => x.BiddingMoney).ToList().LastOrDefault();
+        @:@bidAmount /=
+                }
+            </td>
+            <td>
+                @{ var productId = Convert.ToUInt32(Session["ProductId"].ToString());
+                 if (db.SoldInfoes.Any(x => x.ProductId == productId))
+                 {
+                     continue;
+                 }
+                 else
+                 {
+                    @Html.ActionLink("Sold Now", "SoldNow", new { bidderId = item.Id, productId = Convert.ToUInt32(Session["ProductId"].ToString()) }, new { @class = "btn btn-danger" })
+                 }
+                }
+            </td>
+        </tr>
+    }
+
+</table>

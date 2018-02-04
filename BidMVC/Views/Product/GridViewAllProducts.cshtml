@@ -1,0 +1,45 @@
+﻿@model IEnumerable<BidMVC.Models.Product>
+@{
+    ViewBag.Title = "GridViewAllProducts";
+    Layout = "../Shared/_LayoutPageCustom.cshtml";
+}
+
+<h2>GridViewAllProducts</h2>
+<hr />
+<div class="container">
+    @{
+        int i = 0;
+
+        foreach (var item in Model)
+        {
+            i++;
+            <div class="rptr">
+                <table>
+                    <tr>
+                        <th>@item.ProductName</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="@Url.Content(item.Image1)" class="img-rounded" width="250" height="122" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>@item.ProductCode</td>
+                    </tr>
+                    <tr>
+                        <td>@Html.ActionLink("Select-" + item.ProductCode, "ProductSelector", new { productCode = item.ProductCode }, new { @class = "btn btn-primary" }) </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="number" id="bidMoney[@i]" name="bidMoney[@i]" style="color: black" />
+                        </td>
+                    </tr>
+                    <tr>
+                        @*<td>@Html.ActionLink("Bid", "BidProduct", new { productCode = item.ProductCode, biddingMoney =  }, new { @class = "btn btn-primary" }) </td>*@
+                        <td>@Html.ActionLink("Bid Now", "BidProduct", new { productCode = item.ProductCode }, new { onclick = "this.href += '&biddingMoney=' + document.getElementById('bidMoney[" + @i + "]').value;", @class = "btn btn-primary" })</td>
+                    </tr>
+                </table>
+            </div>
+        }
+    }
+</div>

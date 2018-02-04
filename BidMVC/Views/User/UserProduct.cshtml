@@ -1,0 +1,81 @@
+﻿@using BidMVC.Models
+@model IEnumerable<BidMVC.Models.Product>
+
+@{
+    ViewBag.Title = "UserProduct";
+    Layout = "../Shared/_LayoutPageCustom.cshtml";
+}
+
+<h2>UserProduct</h2>
+
+<table class="table table-responsive table-bordered table-hover">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Details)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MinimumBid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserInfo.UserName)
+        </th>
+        <th>
+            Bid Count
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category)
+            </td>
+            <td>
+                <img src="@Url.Content(item.Image1)" class="img-rounded" height="100" width="100" />
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Details)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MinimumBid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserInfo.UserName)
+            </td>
+            <td>
+                @{
+        Bid_MVC_DBEntities db = new Bid_MVC_DBEntities();
+        var bidCount = db.BidingInfoes.Where(x => x.Product.ProductCode == item.ProductCode).Select(x => x).ToList().Count;
+        @:@bidCount
+                }
+                @Html.ActionLink("View", "AllBiderList", new { productId = item.Id }, new { @class = "btn btn-primary" })
+            </td>
+        </tr>
+    }
+
+</table>

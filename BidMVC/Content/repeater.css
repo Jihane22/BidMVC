@@ -1,0 +1,27 @@
+﻿.rptr table {
+    background: #eee;
+    font: 14px segoe ui;
+    border: 5px;
+    border-collapse: collapse;
+    width: 10%;
+    height: 200px;
+    margin: auto;
+    float: left;
+    
+}
+
+    .rptr table th {
+        background: #000000;
+        color: #fff;
+        padding: 8px 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .rptr table td {
+        padding: 5px 10px;
+        background: #696969;
+        text-align: center;
+        color: white;
+    }
+
